@@ -1,0 +1,31 @@
+{
+  "states": [
+    "intent_goodbye",
+    "intent_greet",
+    "intent_mood_affirm",
+    "intent_mood_deny",
+    "intent_mood_great",
+    "intent_mood_unhappy",
+    "intent_restaurant_search",
+    "intent_thankyou",
+    "slot_Person_0",
+    "slot_cuisine_0",
+    "slot_location_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_action_deactivate_form",
+    "prev_utter_greet",
+    "prev_utter_greetwithname",
+    "prev_utter_goodtohear",
+    "prev_utter_typeofcuisine",
+    "prev_utter_whichlocation",
+    "prev_utter_cheer_up",
+    "prev_utter_did_that_help",
+    "prev_utter_goodbye",
+    "prev_utter_restaurants",
+    "prev_utter_thankyou",
+    "prev_utter_default",
+    "prev_utter_api"
+  ]
+}

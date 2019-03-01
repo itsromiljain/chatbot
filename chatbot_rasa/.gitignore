@@ -1,0 +1,6 @@
+rasa_core.log
+models/dialogue/policy_0_MemoizationPolicy/memorized_turns.json
+models/dialogue/policy_1_KerasPolicy/keras_model.h5
+models/dialogue/policy_metadata.json
+models/dialogue/policy_2_MemoizationPolicy/memorized_turns.json
+models/current/nlu/metadata.json

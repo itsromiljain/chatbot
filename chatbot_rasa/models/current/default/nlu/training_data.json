@@ -1,0 +1,583 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "manoj",
+            "entity": "Person"
+          }
+        ],
+        "text": "hey, I am manoj"
+      },
+      {
+        "intent": "greet",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "gautham",
+            "entity": "Person"
+          }
+        ],
+        "text": "hello I am gautham"
+      },
+      {
+        "intent": "greet",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "Himansu",
+            "entity": "Person"
+          }
+        ],
+        "text": "hi This is Himansu"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "prachi",
+            "entity": "Person"
+          }
+        ],
+        "text": "hey there This is prachi here"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "hii"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "i'm looking for a place to eat"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I want to grab lunch"
+      },
+      {
+        "intent": "restaurant_search",
+        "text": "I am searching for a dinner spot"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "near me",
+            "entity": "location"
+          }
+        ],
+        "text": "food near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Japanese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "value": "here",
+            "entity": "location"
+          }
+        ],
+        "text": "Japanese restaurants near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "near me",
+            "entity": "location"
+          }
+        ],
+        "text": "restaurants near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "near me",
+            "entity": "location"
+          }
+        ],
+        "text": "place near me to eat"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "russian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "russian near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "italian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "italian restaurants near me"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "midtown",
+            "entity": "location"
+          }
+        ],
+        "text": "restaurants in the midtown"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "chinese",
+            "entity": "cuisine"
+          },
+          {
+            "start": 43,
+            "end": 48,
+            "value": "north",
+            "entity": "location"
+          }
+        ],
+        "text": "i'm looking for a chines restaurant in the north of town"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "show me chinese restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "show me a mexican place in this area"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i am looking for an indian spot"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "i am looking for an Desi restaurants"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "want to eat spicy food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I would like a punjabi food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 30,
+            "end": 36,
+            "value": "center",
+            "entity": "location"
+          }
+        ],
+        "text": "search for restaurants in the center"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "west",
+            "entity": "location"
+          }
+        ],
+        "text": "anywhere in the west"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "18328",
+            "entity": "zipcode"
+          }
+        ],
+        "text": "anywhere near 18328"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "asian fusion",
+            "entity": "cuisine"
+          }
+        ],
+        "text": "I am looking for asian fusion food"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "29432",
+            "entity": "zipcode"
+          }
+        ],
+        "text": "I am looking a restaurant in 29432"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "here",
+            "entity": "location"
+          }
+        ],
+        "text": "restaurants here"
+      },
+      {
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 24,
+            "end": 28,
+            "value": "here",
+            "entity": "location"
+          }
+        ],
+        "text": "looking for finest food here"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks!"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thank you"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thx"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks very much"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thankyou very much"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks a lot"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks. Have a nice day"
+      },
+      {
+        "intent": "thankyou",
+        "text": "thanks. have a good one."
+      },
+      {
+        "intent": "thankyou",
+        "text": "have a good one"
+      },
+      {
+        "intent": "thankyou",
+        "text": "okay Thanks"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I am doing great"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I am absolutely alright"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I am fine"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I am happy. How about you"
+      },
+      {
+        "intent": "mood_great",
+        "text": "fine"
+      },
+      {
+        "intent": "mood_great",
+        "text": "alright"
+      },
+      {
+        "intent": "mood_great",
+        "text": "good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "going good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "doing good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "happy"
+      },
+      {
+        "intent": "mood_great",
+        "text": "superb"
+      },
+      {
+        "intent": "mood_great",
+        "text": "All good. How are you?"
+      },
+      {
+        "intent": "mood_great",
+        "text": "great"
+      },
+      {
+        "intent": "mood_great",
+        "text": "doing great"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I am good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "absolutely fine"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am not doing good"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am doing bad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am unhappy"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am so sad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am not happy"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am sick"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "bad mood"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "frustrating"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "going mad"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "No it didn't help"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "I am not satisfied"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "not okay"
+      },
+      {
+        "intent": "api",
+        "text": "jira"
+      },
+      {
+        "intent": "api",
+        "text": "JIRA"
+      },
+      {
+        "intent": "api",
+        "text": "create jira"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "greet",
+        "pattern": "hey[\\s]*.*"
+      },
+      {
+        "name": "greet",
+        "pattern": "hi+[\\s]*.*"
+      },
+      {
+        "name": "mood_great",
+        "pattern": "doing[\\s]*(good|great|awesome)"
+      },
+      {
+        "name": "restaurant_search",
+        "pattern": "[a-zA-Z0-9\\s]*food"
+      },
+      {
+        "name": "restaurant_search",
+        "pattern": "[a-zA-Z0-9\\s]*restaurants"
+      },
+      {
+        "name": "restaurant_search",
+        "pattern": "food[a-zA-Z0-9\\s]*"
+      },
+      {
+        "name": "restaurant_search",
+        "pattern": "restaurants[a-zA-Z0-9\\s]*"
+      },
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "lookup_tables": [],
+    "entity_synonyms": [
+      {
+        "value": "here",
+        "synonyms": [
+          "near me"
+        ]
+      },
+      {
+        "value": "chinese",
+        "synonyms": [
+          "chines"
+        ]
+      },
+      {
+        "value": "indian",
+        "synonyms": [
+          "Desi",
+          "spicy",
+          "punjabi"
+        ]
+      },
+      {
+        "value": "center",
+        "synonyms": [
+          "central",
+          "midtown",
+          "middle"
+        ]
+      }
+    ]
+  }
+}
