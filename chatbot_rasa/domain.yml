@@ -1,0 +1,114 @@
+intents:
+  - greet
+  - yess
+  - noo
+  - prob
+  - prob1
+  - express_issue
+  - express_task
+  - no_idea
+  - working
+  - not_working
+  - my_device
+  - proj_select
+  - fine_normal
+  - fine_ask
+  - ask_help
+  - model_name
+  - year_buy
+  - damage_ans
+  - device_name
+  - my_device1
+  - that_all
+
+actions:
+- utter_how_help
+- utter_greet
+- utter_welcome
+- action_restart
+- utter_what_model
+- utter_what_device
+- utter_what_problem
+- utter_alt
+- utter_ques
+- utter_please_try
+- utter_ticket_raised
+- utter_usual
+- utter_chose_proj
+- utter_anything_else
+- utter_reply_help
+- utter_ofc
+- utter_when
+- utter_damage
+- utter_damage_rep
+- utter_alt1
+- utter_alt2
+- utter_alt3
+- utter_thank
+
+templates:
+  utter_what_model:
+  - text: "san"
+  
+  utter_thank:
+  - text: "tank"
+  
+  utter_alt1:
+  - text: "Long press the power button to restart and check"
+  
+  utter_alt2:
+  - text: "Put it on charge for a while and see if it works"
+  
+  utter_alt3:
+  - text: "Make sure that the battery is not loose"
+
+  utter_what_problem:
+  - text: "What's the name of your device?"
+  
+  utter_what_device:
+  - text: "What's the name of your device?"
+  
+  utter_damage_rep:
+  - text: "Okay, explain the problem"
+  
+  utter_damage:
+  - text: "Was there any physical damage?"
+  
+  utter_when:
+  - text: "When did you buy this device"
+  
+  utter_ofc:
+  - text: "Of course, tell me about it"
+  
+  utter_reply_help:
+  - text: "I'm doing great. What can I do for you"
+  
+  utter_how_help:
+  - text: "How can I help you"
+  
+  utter_anything_else:
+  - text: "Can you tell me more about the problem you are facing"
+  
+  utter_chose_proj:
+  - text: "Select the project: IPAD, PHON, MACB"
+  
+  utter_welcome:
+  - text: "Glad I could help"
+  
+  utter_usual:
+  - text: "salp"
+  
+  utter_alt:
+  - text: "alt"
+  
+  utter_please_try:
+  - text: "please try it and see if its resolved"
+  
+  utter_ques:
+  - text: "Do you want a new one?"
+  
+  utter_ticket_raised:
+  - text: "ninja"
+
+  utter_greet:
+  - text: "Hey! How are you?"
