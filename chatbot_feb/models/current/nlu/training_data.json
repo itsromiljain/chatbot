@@ -1,0 +1,497 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "hii"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "Doing good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "Awesome"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "im fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "im good"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I'm fine, how are you"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I'm good, how are you"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "Doing good, how are you"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "Awesome, how are you"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "im fine, how are you"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "im good, how are you"
+      },
+      {
+        "intent": "ask_help",
+        "text": "Can you assist me with this?"
+      },
+      {
+        "intent": "ask_help",
+        "text": "I need your help on this issue"
+      },
+      {
+        "intent": "ask_help",
+        "text": "I have a problem, can you look into this"
+      },
+      {
+        "intent": "phone_issue",
+        "text": "I have an issue with my iPhone"
+      },
+      {
+        "intent": "phone_issue",
+        "text": "My iPhone has some problem"
+      },
+      {
+        "intent": "phone_issue",
+        "text": "I have an issue with my phone"
+      },
+      {
+        "intent": "phone_issue",
+        "text": "My phone has some problem"
+      },
+      {
+        "intent": "phone_issue",
+        "text": "I want you to fix my iPhone"
+      },
+      {
+        "intent": "phone_issue",
+        "text": "I want you to fix my phone"
+      },
+      {
+        "intent": "ipad_issue",
+        "text": "I have an issue with my iPad"
+      },
+      {
+        "intent": "ipad_issue",
+        "text": "My iPad has some problem"
+      },
+      {
+        "intent": "ipad_issue",
+        "text": "I want you to fix my iPad"
+      },
+      {
+        "intent": "mac_issue",
+        "text": "I have an issue with my mac"
+      },
+      {
+        "intent": "mac_issue",
+        "text": "My mac has some problem"
+      },
+      {
+        "intent": "mac_issue",
+        "text": "I want you to fix my mac"
+      },
+      {
+        "intent": "mac_issue",
+        "text": "I have an issue with my macbook"
+      },
+      {
+        "intent": "mac_issue",
+        "text": "My macbook has some problem"
+      },
+      {
+        "intent": "mac_issue",
+        "text": "I want you to fix my macbook"
+      },
+      {
+        "intent": "phone_model",
+        "text": "iPhone 5"
+      },
+      {
+        "intent": "phone_model",
+        "text": "iPhone 5s"
+      },
+      {
+        "intent": "phone_model",
+        "text": "iPhone 5c"
+      },
+      {
+        "intent": "phone_model",
+        "text": "iPhone 6"
+      },
+      {
+        "intent": "phone_model",
+        "text": "iPhone 6s"
+      },
+      {
+        "intent": "phone_model",
+        "text": "iPhone 7"
+      },
+      {
+        "intent": "phone_model",
+        "text": "iPhone 8"
+      },
+      {
+        "intent": "phone_model",
+        "text": "iPhone 8s"
+      },
+      {
+        "intent": "phone_model",
+        "text": "iPhone x"
+      },
+      {
+        "intent": "phone_model",
+        "text": "iPhone x max"
+      },
+      {
+        "intent": "ipad_model",
+        "text": "iPad air"
+      },
+      {
+        "intent": "ipad_model",
+        "text": "iPad air 2"
+      },
+      {
+        "intent": "ipad_model",
+        "text": "iPad pro"
+      },
+      {
+        "intent": "ipad_model",
+        "text": "iPad 5"
+      },
+      {
+        "intent": "ipad_model",
+        "text": "iPad 6"
+      },
+      {
+        "intent": "mac_model",
+        "text": "MacBook pro"
+      },
+      {
+        "intent": "mac_model",
+        "text": "MacBook air"
+      },
+      {
+        "intent": "mac_model",
+        "text": "iMac pro"
+      },
+      {
+        "intent": "mac_model",
+        "text": "iMac air"
+      },
+      {
+        "intent": "mac_model",
+        "text": "MacBook AluUni"
+      },
+      {
+        "intent": "year_buy",
+        "text": "One year ago"
+      },
+      {
+        "intent": "year_buy",
+        "text": "Two years ago"
+      },
+      {
+        "intent": "year_buy",
+        "text": "I bought this a year ago"
+      },
+      {
+        "intent": "year_buy",
+        "text": "I bought this two years ago"
+      },
+      {
+        "intent": "year_buy",
+        "text": "I bought this few months ago"
+      },
+      {
+        "intent": "year_buy",
+        "text": "Five years ago"
+      },
+      {
+        "intent": "prob_phone_screen",
+        "text": "I am unable to see anything on my iPhone"
+      },
+      {
+        "intent": "prob_phone_screen",
+        "text": "Can't see anything on the screen"
+      },
+      {
+        "intent": "prob_phone_screen",
+        "text": "My iPhone is switched on but I cannot see anything on the screen"
+      },
+      {
+        "intent": "prob_phone_screen",
+        "text": "No display on my iPhone"
+      },
+      {
+        "intent": "prob_phone_pair",
+        "text": "I am unable to pair my headset"
+      },
+      {
+        "intent": "prob_phone_pair",
+        "text": "I can't listen to anything when I connect my headset to my iPhone"
+      },
+      {
+        "intent": "prob_phone_pair",
+        "text": "My iPhone can't pair with anything"
+      },
+      {
+        "intent": "prob_ipad_screen",
+        "text": "I am unable to see anything on my iPad"
+      },
+      {
+        "intent": "prob_ipad_screen",
+        "text": "Can't see anything on my iPad"
+      },
+      {
+        "intent": "prob_ipad_screen",
+        "text": "My iPad is on but I can't see anything on the screen"
+      },
+      {
+        "intent": "prob_ipad_screen",
+        "text": "No display on my iPad"
+      },
+      {
+        "intent": "prob_ipad_pair",
+        "text": "I am unable to pair my headset"
+      },
+      {
+        "intent": "prob_ipad_pair",
+        "text": "I can't listen to anything when I connect my headset to my iPad"
+      },
+      {
+        "intent": "prob_ipad_pair",
+        "text": "My iPad can't pair with anything"
+      },
+      {
+        "intent": "prob_mac_screen",
+        "text": "I am unable to see anything on my MacBook screeen"
+      },
+      {
+        "intent": "prob_mac_screen",
+        "text": "Can't see anything on my MacBook"
+      },
+      {
+        "intent": "prob_mac_screen",
+        "text": "The power is on but I can't see anything on the screen"
+      },
+      {
+        "intent": "prob_mac_screen",
+        "text": "No display on my MacBook"
+      },
+      {
+        "intent": "prob_mac_pair",
+        "text": "I am unable to pair my headset"
+      },
+      {
+        "intent": "prob_mac_pair",
+        "text": "I can't listen to anything when I connect my headset to my iPad"
+      },
+      {
+        "intent": "prob_mac_pair",
+        "text": "I can't connect an external mouse or keyboard"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "No, I never dropped my phone"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "No, I never dropped my iPhone"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "No, I never dropped my iPad"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "No, I never dropped my MacBook"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "Nope"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "I don't drop my phone"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "I don't drop my iPhone"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "I don't drop my iPad"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "I don't drop my MacBook"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "Nothing as such happened"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "No one stamped on it"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "I have never stamped on it"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "No my device is free of virus"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "I've never downloaded anything suspicious. So no virus"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "No it's free of virus"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "Yes, I have dropped my phone a few times"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "Yes, I have dropped my iPhone a few times"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "Yes, I have dropped my iPad a few times"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "Yes, I have dropped my MacBook a few times"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "Yes"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "Dropped it once"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "I used to download moveis from torrents"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "There might be virus"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "I once clicked on a spam link"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "My friend stamped on it"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "I stamped on it once"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "I sat on it once"
+      },
+      {
+        "intent": "working",
+        "text": "Yes it is working"
+      },
+      {
+        "intent": "working",
+        "text": "Oh yes, it's working"
+      },
+      {
+        "intent": "working",
+        "text": "Thank You so much, it's working now"
+      },
+      {
+        "intent": "working",
+        "text": "OMG it worked"
+      },
+      {
+        "intent": "not_working",
+        "text": "Just tried it and it's not working"
+      },
+      {
+        "intent": "not_working",
+        "text": "Still the same"
+      },
+      {
+        "intent": "not_working",
+        "text": "Not working"
+      },
+      {
+        "intent": "not_working",
+        "text": "Tried it but it's still the same"
+      },
+      {
+        "intent": "not_working",
+        "text": "Still not working"
+      }
+    ],
+    "entity_synonyms": [],
+    "lookup_tables": [],
+    "regex_features": []
+  }
+}
