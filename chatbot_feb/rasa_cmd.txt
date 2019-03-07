@@ -1,5 +1,30 @@
-python3 -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue
+##Initial commands to install Rasa NLU
+pip3 install rasa_nlu
+## To Update existing one
+pip3 install -U rasa_nlu
 
+## For dependecnies
+##spaCy+sklearn
+pip3 install rasa_nlu[spacy]
+python3 -m spacy download en_core_web_md
+python3 -m spacy link en_core_web_md en
+
+##Tensorflow
+pip3 install rasa_nlu[tensorflow]
+
+## Train Rasa NLU
 python3 -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose
 
+## Run Rasa NLU
+python3 -m rasa_nlu.server --path ./models
+
+##Initial commands to install Rasa Core
+pip3 install rasa_core
+## To Update existing one
+pip3 install -U rasa_core
+
+##Train Rasa Core
+python3 -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue
+
+## Run Rasa Core
 python3 -m rasa_core.run -d models/dialogue -u models/current/nlu
