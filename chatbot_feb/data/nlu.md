@@ -29,29 +29,19 @@
 - Can you assist me with this?
 - I need your help on this issue
 - I have a problem, can you look into this
+- I have a problem
 
-## intent:phone_issue
+## intent:issue_phone
 - I have an issue with my iPhone
 - My iPhone has some problem
 - I have an issue with my phone
 - My phone has some problem
 - I want you to fix my iPhone
 - I want you to fix my phone
+- I have a problem with my iPhone
+- I have a problem with my phone
 
-## intent:ipad_issue
-- I have an issue with my iPad
-- My iPad has some problem
-- I want you to fix my iPad
-
-## intent:mac_issue
-- I have an issue with my mac
-- My mac has some problem
-- I want you to fix my mac
-- I have an issue with my macbook
-- My macbook has some problem
-- I want you to fix my macbook
-
-## intent:phone_model
+## intent:model_phone
 - iPhone 5
 - iPhone 5s
 - iPhone 5c
@@ -63,27 +53,16 @@
 - iPhone x
 - iPhone x max
 
-## intent:ipad_model
-- iPad air
-- iPad air 2
-- iPad pro
-- iPad 5
-- iPad 6
-
-## intent:mac_model
-- MacBook pro
-- MacBook air
-- iMac pro
-- iMac air
-- MacBook AluUni
-
-## intent:year_buy
+## intent:buy_year
+- 1 year ago
 - One year ago
 - Two years ago
 - I bought this a year ago
 - I bought this two years ago
 - I bought this few months ago
 - Five years ago
+- bought recently
+- 2016
 
 ## intent:prob_phone_screen
 - I am unable to see anything on my iPhone
@@ -96,29 +75,8 @@
 - I can't listen to anything when I connect my headset to my iPhone
 - My iPhone can't pair with anything
 
-## intent:prob_ipad_screen
-- I am unable to see anything on my iPad
-- Can't see anything on my iPad
-- My iPad is on but I can't see anything on the screen
-- No display on my iPad
-
-## intent:prob_ipad_pair
-- I am unable to pair my headset 
-- I can't listen to anything when I connect my headset to my iPad
-- My iPad can't pair with anything
-
-## intent:prob_mac_screen
-- I am unable to see anything on my MacBook screeen
-- Can't see anything on my MacBook
-- The power is on but I can't see anything on the screen
-- No display on my MacBook
-
-## intent:prob_mac_pair
-- I am unable to pair my headset 
-- I can't listen to anything when I connect my headset to my iPad
-- I can't connect an external mouse or keyboard
-
 ## intent:answer_negative
+- No
 - No, I never dropped my phone
 - No, I never dropped my iPhone
 - No, I never dropped my iPad
@@ -136,29 +94,61 @@
 - No it's free of virus
 
 ## intent:answer_positive
+- Yes
+- Yeah
 - Yes, I have dropped my phone a few times
 - Yes, I have dropped my iPhone a few times
 - Yes, I have dropped my iPad a few times
 - Yes, I have dropped my MacBook a few times
-- Yes
 - Dropped it once
-- I used to download moveis from torrents
+- I used to download movies from torrents
 - There might be virus
 - I once clicked on a spam link
 - My friend stamped on it
 - I stamped on it once
 - I sat on it once
 
+## intent:device_charge_status
+- Yes The phone is charged
+- Yes the iphone is charged
+- Yes, Its charged
+- Yes, It is charged
+- No Its not charged
+- No, let me put it on charge
+
+##intent:alt_reply
+- Ok
+- Sure, let me do so
+- Sure, I can try
+- Ok, Just did it
+- Ok, doing so
+
 ## intent:working
 - Yes it is working
 - Oh yes, it's working
 - Thank You so much, it's working now
 - OMG it worked
+- It seems to be working. Thank you so much for your help
 
 ## intent:not_working
 - Just tried it and it's not working
 - Still the same
+- Still the same issue
 - Not working
 - Tried it but it's still the same
 - Still not working
 
+#intent:greet_ticket
+- Thanks
+- Ok
+- Thanks for creating the ticket
+
+#intent:bye
+- Bye
+- Thanks for your help. Bye
+- Thanks for your help. I will touch base with the service desk
+- Thanks for your help. Let me connect with service desk
+- Thanks for all your help
+- No, I am good for now
+- No, I am good for now. Thanks for your help
+- No, I am good for now. Thanks for all your help

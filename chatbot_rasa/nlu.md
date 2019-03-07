@@ -21,10 +21,10 @@
 - Yeah I need more help
 
 ## intent:fine_ask
-- I'm fine, how are you
-- I'm good, how are you
-- Doing good, how are you
-- Awesome, how are you
+- I'm fine, how are you?
+- I'm good, how are you?
+- Doing good, how are you?
+- Awesome, how are you?
 
 ## intent:ask_help
 - Can you assist me with this?
@@ -37,8 +37,8 @@
 - iPhone x
 - iPhone 7s
 - iPhone 8
-- macbook pro
-- macbook air
+- Macbook Pro
+- Macbook Air
 - iPad mini
 - iPad air
 - iPad pro
@@ -101,10 +101,11 @@
 - aaaaaaa
 
 ## intent:device_name
-- iphone
-- ipad
-- macbook
-- mac
+- iPhone
+- iPad
+- Macbook
+- Mac
+- Watch
 
 ## intent:yess
 - yes
