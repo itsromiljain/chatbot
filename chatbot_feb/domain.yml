@@ -5,6 +5,8 @@ slots:
     type: text
   prob_notify:
     type: text
+  model_name:
+    type: text
 
 
 intents:
