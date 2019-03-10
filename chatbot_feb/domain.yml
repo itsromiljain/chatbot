@@ -78,8 +78,6 @@ templates:
   utter_device_charged:
   - text: "I will try my best to help you with this. Please check if your phone is charged"
   utter_charge:
-  - text: "Did it work after charging"
-  utter_charge:
   - text: "Please put it on charge and let me know if it is working"
   utter_alts2:
   - text: "Can you please try to switch on your iPhone by long pressing your power button?"
