@@ -3,11 +3,16 @@ slots:
     type: text
   problem:
     type: text
-  prob_notify:
+  notify_problem:
     type: text
   model_name:
     type: text
 
+entities:
+  - device_name
+  - model_name
+  - problem
+  - notify_problem
 
 intents:
   - greet
@@ -31,6 +36,7 @@ intents:
   
 actions:
 - action_restart
+- utter_default
 - utter_greet
 - utter_reply
 - utter_help

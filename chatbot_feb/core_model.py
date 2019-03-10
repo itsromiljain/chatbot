@@ -4,7 +4,7 @@ from rasa_core.policies import FallbackPolicy, KerasPolicy, MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
 
 
-fallback = FallbackPolicy(core_threshold=0.2, nlu_threshold=0.1,fallback_action_name='utter_unclear')
+fallback = FallbackPolicy(core_threshold=0.2, nlu_threshold=0.1,fallback_action_name='utter_default')
 
 
 def train_core(domain_file, model_path, training_data_file):

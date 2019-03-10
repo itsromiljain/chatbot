@@ -33,6 +33,14 @@ python3 -m rasa_core.run -d models/dialogue -u models/current/nlu
 python -m rasa_core.run -d models/dialogue -u models/current/nlu --debug
 
 
+##Python
+##Train and Run NLU
+ python3 nlu_model.py
+
+## Train and Run CORE
+ python3 core_model.py
+
+
 
 
 
