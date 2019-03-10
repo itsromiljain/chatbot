@@ -53,7 +53,6 @@
 - I am unable to see anything on my iPhone
 - Can't see anything on the [screen](problem)
 - My iPhone is switched on but I cannot see anything on the [screen](problem)
-- No display on my iPhone
 
 ## intent:prob_phone_pair
 - I am unable to [pair](problem) my headset 
@@ -94,24 +93,24 @@
 - I sat on it once
 
 ## intent:device_charge_status_positive
-- Yes The phone is charged
-- Yes the iphone is charged
-- Yes, Its charged
-- Yes, It is charged
+- The phone is charged
+- the iphone is charged
+- Its charged
+- It is charged
 
 ## intent:device_charge_status_negative
-- No Its not charged
-- No, let me put it on charge
+- Its not charged
+- let me put it on charge
 
 ## intent:alt_reply
-- Sure, let me do so
-- Sure, I can try
-- Ok, just did it
-- Ok, doing so
+- let me do so
+- I can try
+- just did it
+- doing so
 
 ## intent:working
-- Yes it is working
-- Oh yes, it's working
+- it is working
+- Oh, it's working
 - Thank You so much, it's working now
 - OMG it worked
 - It seems to be working. Thank you so much for your help
@@ -128,18 +127,15 @@
 - Thanks
 - Thanks for creating the ticket
 
-## intent:alt_reply1
-- altahsg
-
 ## intent:bye
 - Bye
 - Thanks for your help. Bye
 - Thanks for your help. I will touch base with the service desk
 - Thanks for your help. Let me connect with service desk
 - Thanks for all your help
-- No, I am good for now
-- No, I am good for now. Thanks for your help
-- No, I am good for now. Thanks for all your help
+- I am good for now
+- I am good for now. Thanks for your help
+- I am good for now. Thanks for all your help
 
 ## synonym: problem
 - issue
