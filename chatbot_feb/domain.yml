@@ -16,9 +16,16 @@ intents:
   - not_working
   - greet_ticket
   - bye
+
+entities:
+  - device_name
+  - model_name
+  - problem
+  - notify_problem
   
 actions:
 - action_restart
+- utter_unclear
 - utter_greet
 - utter_reply
 - utter_help
@@ -90,3 +97,5 @@ templates:
   - text: "Is there anything else I can help you with?"
   utter_bye:
   - text: "Thank you and have a nice day"
+  utter_unclear:
+  - text: "I am not sure what you are aiming for "

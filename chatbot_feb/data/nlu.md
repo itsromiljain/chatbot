@@ -32,8 +32,8 @@
 - I have a problem
 
 ## intent:issue_phone
-- I have an [issue](prob_notify) with my [iPhone](device_name)
-- My [iPhone](device_name) has some [problem](prob_notify)
+- I have an [issue](notify_problem) with my [iPhone](device_name)
+- My [iPhone](device_name) has some [problem](notify_problem)
 
 ## intent:model_phone
 - [iPhone 5](model_name)
