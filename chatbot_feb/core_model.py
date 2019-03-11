@@ -8,7 +8,7 @@ fallback = FallbackPolicy(core_threshold=0.2, nlu_threshold=0.1,fallback_action_
 
 
 def train_core(domain_file, model_path, training_data_file):
-    logging.basicConfig(level='INFO')
+    logging.basicConfig(filename='rasa_core.log', level=logging.DEBUG)
     agent = Agent(domain_file, policies=[MemoizationPolicy(), KerasPolicy(), fallback])
     training_data = agent.load_data(training_data_file)
     agent.train(training_data)
@@ -17,7 +17,7 @@ def train_core(domain_file, model_path, training_data_file):
 
 
 def run_core(core_model_path, nlu_model_path):
-    logging.basicConfig(level='INFO')
+    logging.basicConfig(filename='rasa_core.log', level=logging.DEBUG)
     nlu_interpreter = RasaNLUInterpreter(nlu_model_path)
     agent = Agent.load(core_model_path, interpreter=nlu_interpreter)
     print("Your bot is ready to talk! Type your messages here or send 'stop'")

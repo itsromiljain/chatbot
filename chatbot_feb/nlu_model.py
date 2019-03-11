@@ -7,7 +7,7 @@ from rasa_nlu.evaluate import run_evaluation
 
 
 def train_nlu(data_path, configs, model_path):
-    logging.basicConfig(level='INFO')
+    logging.basicConfig(filename='rasa_nlu.log', level=logging.DEBUG)
     training_data = load_data(data_path)
     trainer = Trainer(config.load(configs))
     trainer.train(training_data)
@@ -16,7 +16,7 @@ def train_nlu(data_path, configs, model_path):
 
 
 def run_nlu():
-    logging.basicConfig(level='INFO')
+    logging.basicConfig(filename='rasa_nlu.log', level=logging.DEBUG)
     interpreter = Interpreter.load('./models/current/nlu')
     print(interpreter.parse("Hello"))
 

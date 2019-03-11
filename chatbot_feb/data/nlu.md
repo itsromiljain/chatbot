@@ -51,12 +51,12 @@
 
 ## intent:prob_phone_screen
 - I am unable to see anything on my iPhone
-- Can't see anything on the [screen](problem)
-- My iPhone is switched on but I cannot see anything on the [screen](problem)
+- Can't see anything on the [screen](problem_type)
+- My iPhone is switched on but I cannot see anything on the [screen](problem_type)
 
 ## intent:prob_phone_pair
-- I am unable to [pair](problem) my headset 
-- I can't listen to anything when I [connect](problem) my headset to my iPhone
+- I am unable to [pair](problem_type) my headset 
+- I can't listen to anything when I [connect](problem_type) my headset to my iPhone
 - My iPhone can't pair with anything
 
 ## intent:answer_negative
