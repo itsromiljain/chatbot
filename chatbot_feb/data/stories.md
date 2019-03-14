@@ -22,7 +22,7 @@
 - utter_default
 
 ## phone path 1
-* issue_phone{"device_name":"iPhone"}
+* issue_phone{"device_name":"iPhone"}{"notify_problem":"issue"}
 - utter_model_phone
 * model_phone{"model_name":"iPhone 5"}
 - utter_year
@@ -34,17 +34,21 @@
 - utter_issue_stamp
 * answer_negative
 - utter_device_charged
-* device_charge_status_positive
+* answer_positive
 - utter_alts2
 * alt_reply
 - utter_ask
-* not_working
+* answer_negative
 - utter_alts3
 * alt_reply
 - utter_ask
-* not_working
+* answer_negative
 - utter_damage_screen
 - utter_process_ticket
 - action_create_ticket
 * greet_ticket
 - utter_anything_else
+
+## path11
+* issue_phone{"device_name":"iPhone"}{"notify_problem":"issue"}
+- utter_model_phone
