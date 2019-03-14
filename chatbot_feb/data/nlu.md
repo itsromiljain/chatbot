@@ -36,7 +36,9 @@
 - My [iPhone](device_name) has some [problem](notify_problem)
 
 ## intent:model_phone
-- [iPhone 5](model_name)
+- iPhone 5
+- iphone 6
+- iphone 7
 
 ## intent:buy_year
 - 1 year ago
@@ -60,62 +62,21 @@
 - My [iPhone](device_name) can't pair with anything
 
 ## intent:answer_negative
-- No
-- No, I never dropped my [phone](device_name)
-- No, I never dropped my [iPhone](device_name)
-- Nope
-- I don't drop my [phone](device_name)
-- I don't drop my [iPhone](device_name)
-- Nothing as such happened
-- No one stamped on it
-- I have never stamped on it
-- No my device is free of virus
-- I've never downloaded anything suspicious. So no virus
-- No it's free of virus
+- Negative
+- not working
+- no
+- did not work
 
 ## intent:answer_positive
-- Yes
-- Yeah
-- Yes, I have dropped my [phone](device_name) a few times
-- Yes, I have dropped my [iPhone](device_name) a few times
-- Dropped it once
-- I used to download movies from torrents
-- There might be virus
-- I once clicked on a spam link
-- My friend stamped on it
-- I stamped on it once
-- I sat on it once
+- yes
+- it is working
 
-## intent:device_charge_status_positive
-- The [phone](device_name) is charged
-- the [iPhone](device_name) is charged
-- Its charged
-- It is charged
-
-## intent:device_charge_status_negative
-- Its not charged
-- let me put it on charge
 
 ## intent:alt_reply
 - let me do so
 - I can try
 - just did it
 - doing so
-
-## intent:working
-- it is working
-- Oh, it's working
-- Thank You so much, it's working now
-- OMG it worked
-- It seems to be working. Thank you so much for your help
-
-## intent:not_working
-- Just tried it and it's not working
-- Still the same
-- Still the same issue
-- Not working
-- Tried it but it's still the same
-- Still not working
 
 ## intent:greet_ticket
 - Thanks
@@ -141,14 +102,3 @@
 - [phone](device_name)
 - [mobile](device_name)
 - [cell phone](device_name)
-
-## synonym: iPhone 5
-- [iPhone 5s](model_name)
-- [iPhone 5c](model_name)
-- [iPhone 6](model_name)
-- [iPhone 6s](model_name)
-- [iPhone 7](model_name)
-- [iPhone 8](model_name)
-- [iPhone 8s](model_name)
-- [iPhone x](model_name)
-- [iPhone x max](model_name)
