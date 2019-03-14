@@ -1,12 +1,13 @@
 slots:
   device_name:
     type: text
-  problem:
+  model_name:
+    type: text
+  problem_type:
     type: text
   notify_problem:
     type: text
-  model_name:
-    type: text
+
 
 entities:
   - device_name
@@ -36,6 +37,7 @@ intents:
   
 actions:
 - action_restart
+- action_create_ticket
 - utter_default
 - utter_greet
 - utter_reply
@@ -59,7 +61,7 @@ actions:
 - utter_damage_bluetooth
 - utter_glad
 - utter_anything_else
-- utter_create_ticket
+- utter_process_ticket
 - utter_bye
 
 templates:

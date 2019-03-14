@@ -18,10 +18,12 @@ python3 -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed
 ## Run Rasa NLU
 python3 -m rasa_nlu.server --path ./models
 
-##Initial commands to install Rasa Core
+##Initial commands to install Rasa Core & SDK
 pip3 install rasa_core
 ## To Update existing one
 pip3 install -U rasa_core
+
+pip3 install rasa_core_sdk
 
 ##Train Rasa Core
 python3 -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue
@@ -39,6 +41,10 @@ python -m rasa_core.run -d models/dialogue -u models/current/nlu --debug
 
 ## Train and Run CORE
  python3 core_model.py
+
+
+## To run the custom action
+python3 -m rasa_core_sdk.endpoint --actions actions
 
 
 

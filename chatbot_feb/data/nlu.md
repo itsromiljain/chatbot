@@ -50,26 +50,22 @@
 - 2016
 
 ## intent:prob_phone_screen
-- I am unable to see anything on my iPhone
+- I am unable to see anything on my [iPhone](device_name)
 - Can't see anything on the [screen](problem_type)
-- My iPhone is switched on but I cannot see anything on the [screen](problem_type)
+- My [iPhone](device_name) is switched on but I cannot see anything on the [screen](problem_type)
 
 ## intent:prob_phone_pair
 - I am unable to [pair](problem_type) my headset 
-- I can't listen to anything when I [connect](problem_type) my headset to my iPhone
-- My iPhone can't pair with anything
+- I can't listen to anything when I [connect](problem_type) my headset to my [iPhone](device_name)
+- My [iPhone](device_name) can't pair with anything
 
 ## intent:answer_negative
 - No
-- No, I never dropped my phone
-- No, I never dropped my iPhone
-- No, I never dropped my iPad
-- No, I never dropped my MacBook
+- No, I never dropped my [phone](device_name)
+- No, I never dropped my [iPhone](device_name)
 - Nope
-- I don't drop my phone
-- I don't drop my iPhone
-- I don't drop my iPad
-- I don't drop my MacBook
+- I don't drop my [phone](device_name)
+- I don't drop my [iPhone](device_name)
 - Nothing as such happened
 - No one stamped on it
 - I have never stamped on it
@@ -80,10 +76,8 @@
 ## intent:answer_positive
 - Yes
 - Yeah
-- Yes, I have dropped my phone a few times
-- Yes, I have dropped my iPhone a few times
-- Yes, I have dropped my iPad a few times
-- Yes, I have dropped my MacBook a few times
+- Yes, I have dropped my [phone](device_name) a few times
+- Yes, I have dropped my [iPhone](device_name) a few times
 - Dropped it once
 - I used to download movies from torrents
 - There might be virus
@@ -93,8 +87,8 @@
 - I sat on it once
 
 ## intent:device_charge_status_positive
-- The phone is charged
-- the iphone is charged
+- The [phone](device_name) is charged
+- the [iPhone](device_name) is charged
 - Its charged
 - It is charged
 
@@ -143,18 +137,18 @@
 - monitor
 
 ## synonym: iPhone
-- iphone
-- phone
-- mobile
-- cell phone
+- [iphone](device_name)
+- [phone](device_name)
+- [mobile](device_name)
+- [cell phone](device_name)
 
 ## synonym: iPhone 5
-- iPhone 5s
-- iPhone 5c
-- iPhone 6
-- iPhone 6s
-- iPhone 7
-- iPhone 8
-- iPhone 8s
-- iPhone x
-- iPhone x max
+- [iPhone 5s](model_name)
+- [iPhone 5c](model_name)
+- [iPhone 6](model_name)
+- [iPhone 6s](model_name)
+- [iPhone 7](model_name)
+- [iPhone 8](model_name)
+- [iPhone 8s](model_name)
+- [iPhone x](model_name)
+- [iPhone x max](model_name)
