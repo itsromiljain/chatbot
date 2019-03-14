@@ -1,8 +1,6 @@
 slots:
   device_name:
     type: text
-  model_name:
-    type: text
   problem_type:
     type: text
   notify_problem:
@@ -11,7 +9,6 @@ slots:
 
 entities:
   - device_name
-  - model_name
   - problem_type
   - notify_problem
 
@@ -27,11 +24,7 @@ intents:
   - prob_phone_pair
   - answer_negative
   - answer_positive
-  - device_charge_status_positive
-  - device_charge_status_negative
   - alt_reply
-  - working
-  - not_working
   - greet_ticket
   - bye
   
