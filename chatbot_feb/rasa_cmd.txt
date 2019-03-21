@@ -31,6 +31,8 @@ python3 -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -
 ## Run Rasa Core
 python3 -m rasa_core.run -d models/dialogue -u models/current/nlu
 
+python -m rasa_core.run -d models/dialogue -u models/nlu/current --port 5002 --credentials credentials.yml
+
 # Debug Rasa Core
 python3 -m rasa_core.run -d models/dialogue -u models/current/nlu --debug
 
