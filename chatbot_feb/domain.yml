@@ -1,110 +1,118 @@
 slots:
   device_name:
     type: text
-  problem_type:
-    type: text
   notify_problem:
     type: text
-
+  model_name:
+    type: text
+  problem_type:
+    type: text
 
 entities:
   - device_name
-  - problem_type
   - notify_problem
+  - model_name
+  - problem_type
 
 intents:
   - greet
   - fine_normal
   - fine_ask
-  - ask_help
-  - issue_phone
-  - model_phone
+  - device_issue
+  - device_model
   - buy_year
-  - prob_phone_screen
-  - prob_phone_pair
-  - answer_negative
+  - prob_device_screen
   - answer_positive
-  - alt_reply
+  - answer_negative
+  - answer_screen_positive
+  - answer_screen_negative
   - greet_ticket
+  - alt_reply
   - bye
-  
+
 actions:
 - action_restart
 - action_create_ticket
 - utter_default
 - utter_greet
-- utter_reply
 - utter_help
+- utter_reply
 - utter_ofc
-- utter_model_phone
+- utter_device_model
 - utter_year
 - utter_issue_damage
 - utter_issue_fall
-- utter_issue_stamp
-- utter_issue_virus
-- utter_device_charged
-- utter_charge
-- utter_alts2
-- utter_alts3
-- utter_ask
-- utter_altb1
-- utter_altb2
-- utter_altb3
 - utter_damage_screen
-- utter_damage_bluetooth
+- utter_process_ticket
+- utter_issue_stamp
+- utter_device_charged
+- utter_restart
+- utter_restart_outcome
+- utter_issue_resolution
 - utter_glad
 - utter_anything_else
-- utter_process_ticket
 - utter_bye
 
 templates:
+  utter_default:
+    - text: "I am not sure what you're aiming for"
   utter_greet:
   - text: "Hey, how are you?"
-  utter_reply:
-  - text: "I'm doing great. Please let me know what I can do for you."
+  - text: "Hello, How are you doing?"
   utter_help:
-  - text: "Great. How can I help you?"
+    - text: "Great. How can I help you?"
+    - text: "Great. Tell me How can I help you?"
+  utter_reply:
+    - text: "I'm doing great. Please let me know what I can do for you."
+    - text: "I'm doing great. Tell me How can I help you today?"
   utter_ofc:
-  - text: "I can definitely help you, please tell me about the issue that you are facing."
-  utter_model_phone:
-  - text: "No worries, May I know the model of your iPhone?"
+    - text: "I can definitely help you"
+    - text: "Surely, I can help you"
+    - text: "Happy to help you"
+  utter_device_model:
+    - text: "May I know the model of your {device_name}?"
+    - text: "Would you please tell me the model of your {device_name}?"
   utter_year:
-  - text: "I can help you with this, but before that, I need to know few details. Can you tell me when you've bought this device?"
+    - text: "Thanks. Can you also tell me when you've bought this {device_name}?"
+    - text: "Thanks. May I also know the Year of Purchase?"
+    - text: "Thanks. May I also know when did you buy this {device_name}?"
+    - text: "Thanks. Can you please tell me in which year did you buy this {device_name}?"
   utter_issue_damage:
-  - text: "Okay, So what exactly is the problem/damage here?"
+    - text: "Thank you so much for the details, So what exactly is the {notify_problem} here?"
+    - text: "Great, So what exactly is the problem/damage here?"
+    - text: "Thank you for providing the details, So what exactly is the {notify_problem} here?"
   utter_issue_fall:
-  - text: "Okay, that's common. Did you, by any chance drop your phone?"
-  utter_issue_stamp:
-  - text: "Did anyone has sat or stamped on your device."
-  utter_issue_virus:
-  - text: "Can you please tell me if you have any virus or if you have clicked on any spam links?"
-  utter_device_charged:
-  - text: "I will try my best to help you with this. Please check if your phone is charged"
-  utter_charge:
-  - text: "Please put it on charge and let me know if it is working"
-  utter_alts2:
-  - text: "Can you please try to switch on your iPhone by long pressing your power button?"
-  utter_ask:
-  - text: "Would you please let me know if that works?"
-  utter_alts3:
-  - text: "No problem if that didn't work out. Please hold on your power button and press your home button thrice"
-  utter_altb1:
-  - text: "I will try my best to help you with this. Please restart your phone and try pairing again"
-  utter_altb2:
-  - text: "Okay no worries. Switch on the aeroplane mode on and off and check if you're able to pair"
-  utter_altb3:
-  - text: "There might be a problem with the device that you are pairing. Please try pairing it with another device"
+    - text: "Okay, I see. Did you, by any chance drop your {device_name}?"
+    - text: "I am so sorry for that but did you by any chance drop your {device_name}?"
   utter_damage_screen:
-  - text: "It looks like there is some internal damage to the screen"
-  utter_damage_bluetooth:
-  - text: "It looks like there is some problem with your bluetooth"
+    - text: "It looks like there is some internal damage to the screen"
+    - text: "It looks like your screen is damaged"
+    - text: "I am afraid to say but It looks like your screen is damaged"
+    - text: "I am afraid to say but there is some internal damage to the screen"
+  utter_process_ticket:
+    - text: "Let me raise a ticket with our service desk and they will be happy to help you with this. Give me a moment"
+    - text: "I am raising a ticket with our service desk and they will be happy to help you with this. Give me a moment"
+  utter_issue_stamp:
+    - text: "Did anyone has sat or stamped on your {device_name}."
+    - text: "Do you recall if someone has stamped on your {device_name}."
+  utter_device_charged:
+    - text: "I will try my best to help you with this. Can you please put your {device_name} on charge"
+    - text: "Ok, Let me do my best. Can you please put your {device_name} on charge"
+  utter_restart:
+    - text: "While your {device_name} is charging, Please hold on your power button and press your home button."
+  utter_restart_outcome:
+    - text: "Once your {device_name} starts let me know if you can see anything on the screen"
+  utter_issue_resolution:
+    - text: "Great, There is a possibility your {device_name} was hanged."
+    - text: "Great, looks like your {device_name} got hanged."
   utter_glad:
-  - text: "I'm glad I could help"
-  utter_create_ticket:
-  - text: "I am so sorry but I can't figure out what the problem could be. Let me raise a ticket with our service desk and they will be happy to help you with this. Here are the details of your ticket"
+    - text: "I'm glad I could help"
+    - text: "I'm happy I could help"
+    - text: "I'm happy to resolve your problem"
+    - text: "I'm happy to resolve your issue"
   utter_anything_else:
-  - text: "Is there anything else I can help you with?"
+    - text: "Is there anything else I can help you with?"
+    - text: "Let me know if there is anything else I can help you with"
   utter_bye:
-  - text: "Thank you and have a nice day"
-  utter_default:
-  - text: "I am not sure what you're aiming for"
+    - text: "Thank you and have a nice day"
+

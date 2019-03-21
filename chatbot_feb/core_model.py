@@ -1,4 +1,5 @@
 import logging
+from rasa_core.channels.slack import SlackInput
 from rasa_core.agent import Agent
 from rasa_core.policies import FallbackPolicy, KerasPolicy, MemoizationPolicy
 from rasa_core.interpreter import RasaNLUInterpreter
@@ -22,6 +23,9 @@ def run_core(core_model_path, nlu_model_path):
     nlu_interpreter = RasaNLUInterpreter(nlu_model_path)
     action_endpoint = EndpointConfig(url="http://localhost:5055/webhook")
     agent = Agent.load(core_model_path, interpreter=nlu_interpreter, action_endpoint=action_endpoint)
+    input_channel = SlackInput('xoxb-584494866935-581059211888-u8jQUqwKf9tRwORHAghPL8NJ')
+    agent.handle_channels([input_channel], 5004, serve_forever=True)
+
     print("Your bot is ready to talk! Type your messages here or send 'stop'")
     while True:
         a = input()

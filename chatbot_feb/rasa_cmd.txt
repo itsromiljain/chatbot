@@ -26,13 +26,13 @@ pip3 install -U rasa_core
 pip3 install rasa_core_sdk
 
 ##Train Rasa Core
-python3 -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue
+python3 -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -c policy.yml
 
 ## Run Rasa Core
 python3 -m rasa_core.run -d models/dialogue -u models/current/nlu
 
 # Debug Rasa Core
-python -m rasa_core.run -d models/dialogue -u models/current/nlu --debug
+python3 -m rasa_core.run -d models/dialogue -u models/current/nlu --debug
 
 
 ##Python
@@ -42,9 +42,14 @@ python -m rasa_core.run -d models/dialogue -u models/current/nlu --debug
 ## Train and Run CORE
  python3 core_model.py
 
-
 ## To run the custom action
 python3 -m rasa_core_sdk.endpoint --actions actions
+
+
+
+## NLU runs on port 5000
+## Core runs on port 5005
+## Action runs on port 5055
 
 
 
