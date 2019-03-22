@@ -1,0 +1,147 @@
+%YAML 1.1
+---
+actions:
+- action_restart
+- action_create_ticket
+- utter_default
+- utter_greet
+- utter_help
+- utter_reply
+- utter_ofc
+- utter_device_model
+- utter_year
+- utter_issue_damage
+- utter_issue_fall
+- utter_damage_screen
+- utter_process_ticket
+- utter_issue_stamp
+- utter_device_charged
+- utter_restart
+- utter_restart_outcome
+- utter_issue_resolution
+- utter_glad
+- utter_anything_else
+- utter_bye
+config:
+  store_entities_as_slots: true
+entities:
+- device_name
+- notify_problem
+- model_name
+- problem_type
+forms: []
+intents:
+- greet:
+    use_entities: true
+- fine_normal:
+    use_entities: true
+- fine_ask:
+    use_entities: true
+- device_issue:
+    use_entities: true
+- device_model:
+    use_entities: true
+- buy_year:
+    use_entities: true
+- prob_device_screen:
+    use_entities: true
+- answer_positive:
+    use_entities: true
+- answer_negative:
+    use_entities: true
+- answer_screen_positive:
+    use_entities: true
+- answer_screen_negative:
+    use_entities: true
+- greet_ticket:
+    use_entities: true
+- alt_reply:
+    use_entities: true
+- bye:
+    use_entities: true
+slots:
+  device_name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  model_name:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  notify_problem:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  problem_type:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_anything_else:
+  - text: Is there anything else I can help you with?
+  - text: Let me know if there is anything else I can help you with
+  utter_bye:
+  - text: Thank you and have a nice day
+  utter_damage_screen:
+  - text: It looks like there is some internal damage to the screen
+  - text: It looks like your screen is damaged
+  - text: I am afraid to say but It looks like your screen is damaged
+  - text: I am afraid to say but there is some internal damage to the screen
+  utter_default:
+  - text: I am not sure what you're aiming for
+  utter_device_charged:
+  - text: I will try my best to help you with this. Can you please put your {device_name}
+      on charge
+  - text: Ok, Let me do my best. Can you please put your {device_name} on charge
+  utter_device_model:
+  - text: May I know the model of your {device_name}?
+  - text: Would you please tell me the model of your {device_name}?
+  utter_glad:
+  - text: I'm glad I could help
+  - text: I'm happy I could help
+  - text: I'm happy to resolve your problem
+  - text: I'm happy to resolve your issue
+  utter_greet:
+  - text: Hey, how are you?
+  - text: Hello, How are you doing?
+  utter_help:
+  - text: Great. How can I help you?
+  - text: Great. Tell me How can I help you?
+  utter_issue_damage:
+  - text: Thank you so much for the details, So what exactly is the {notify_problem}
+      here?
+  - text: Great, So what exactly is the problem/damage here?
+  - text: Thank you for providing the details, So what exactly is the {notify_problem}
+      here?
+  utter_issue_fall:
+  - text: Okay, I see. Did you, by any chance drop your {device_name}?
+  - text: I am so sorry for that but did you by any chance drop your {device_name}?
+  utter_issue_resolution:
+  - text: Great, There is a possibility your {device_name} was hanged.
+  - text: Great, looks like your {device_name} got hanged.
+  utter_issue_stamp:
+  - text: Did anyone has sat or stamped on your {device_name}.
+  - text: Do you recall if someone has stamped on your {device_name}.
+  utter_ofc:
+  - text: I can definitely help you
+  - text: Surely, I can help you
+  - text: Happy to help you
+  utter_process_ticket:
+  - text: Let me raise a ticket with our service desk and they will be happy to help
+      you with this. Give me a moment
+  - text: I am raising a ticket with our service desk and they will be happy to help
+      you with this. Give me a moment
+  utter_reply:
+  - text: I'm doing great. Please let me know what I can do for you.
+  - text: I'm doing great. Tell me How can I help you today?
+  utter_restart:
+  - text: While your {device_name} is charging, Please hold on your power button and
+      press your home button.
+  utter_restart_outcome:
+  - text: Once your {device_name} starts let me know if you can see anything on the
+      screen
+  utter_year:
+  - text: Thanks. Can you also tell me when you've bought this {device_name}?
+  - text: Thanks. May I also know the Year of Purchase?
+  - text: Thanks. May I also know when did you buy this {device_name}?
+  - text: Thanks. Can you please tell me in which year did you buy this {device_name}?

@@ -1,0 +1,9 @@
+{
+  "issue": " problem",
+  "display": " problem",
+  "monitor": " problem",
+  "[iphone](device_name)": " iPhone",
+  "[phone](device_name)": " iPhone",
+  "[mobile](device_name)": " iPhone",
+  "[cell phone](device_name)": " iPhone"
+}

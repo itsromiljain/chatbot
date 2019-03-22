@@ -30,7 +30,6 @@ python3 -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -
 
 ## Run Rasa Core
 python3 -m rasa_core.run -d models/dialogue -u models/current/nlu
-
 python -m rasa_core.run -d models/dialogue -u models/nlu/current --port 5002 --credentials credentials.yml
 
 # Debug Rasa Core
@@ -39,14 +38,13 @@ python3 -m rasa_core.run -d models/dialogue -u models/current/nlu --debug
 
 ##Python
 ##Train and Run NLU
- python3 nlu_model.py
+python3 nlu_model.py
 
 ## Train and Run CORE
- python3 core_model.py
+python3 dialogue_model.py
 
 ## To run the custom action
 python3 -m rasa_core_sdk.endpoint --actions actions
-
 
 
 ## NLU runs on port 5000

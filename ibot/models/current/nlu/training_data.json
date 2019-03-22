@@ -1,0 +1,631 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "hii"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I am doing great"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm doing great"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "Doing good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "Awesome"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "im fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "im good"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I am good, how are you doing?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I'm fine, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I'm good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I am good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "Doing good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "Awesome, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "im fine, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "im good, how are you?"
+      },
+      {
+        "intent": "device_issue",
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "problem",
+            "entity": "notify_problem"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "value": "iPhone",
+            "entity": "device_name"
+          }
+        ],
+        "text": "I have a problem with my iPhone"
+      },
+      {
+        "intent": "device_issue",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "issue",
+            "entity": "notify_problem"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "value": "iPhone",
+            "entity": "device_name"
+          }
+        ],
+        "text": "I have an issue with my iPhone"
+      },
+      {
+        "intent": "device_issue",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "problem",
+            "entity": "notify_problem"
+          },
+          {
+            "start": 33,
+            "end": 39,
+            "value": "iPhone",
+            "entity": "device_name"
+          }
+        ],
+        "text": "I am facing some problem with my iPhone"
+      },
+      {
+        "intent": "device_issue",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "issue",
+            "entity": "notify_problem"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "value": "iPhone",
+            "entity": "device_name"
+          }
+        ],
+        "text": "I am facing some issue with my iPhone"
+      },
+      {
+        "intent": "device_issue",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "iPhone",
+            "entity": "device_name"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "value": "problem",
+            "entity": "notify_problem"
+          }
+        ],
+        "text": "My iPhone has some problem"
+      },
+      {
+        "intent": "device_issue",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "iPhone",
+            "entity": "device_name"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "value": "issue",
+            "entity": "notify_problem"
+          }
+        ],
+        "text": "My iPhone has some issue"
+      },
+      {
+        "intent": "device_issue",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "problem",
+            "entity": "notify_problem"
+          },
+          {
+            "start": 39,
+            "end": 45,
+            "value": "iPhone",
+            "entity": "device_name"
+          }
+        ],
+        "text": "There seems to be some problem with my iPhone"
+      },
+      {
+        "intent": "device_issue",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "issue",
+            "entity": "notify_problem"
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "value": "iPhone",
+            "entity": "device_name"
+          }
+        ],
+        "text": "There seems to be some issue with my iPhone"
+      },
+      {
+        "intent": "device_model",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "iPhone 5",
+            "entity": "model_name"
+          }
+        ],
+        "text": "iPhone 5"
+      },
+      {
+        "intent": "device_model",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "iPhone 5s",
+            "entity": "model_name"
+          }
+        ],
+        "text": "iPhone 5s"
+      },
+      {
+        "intent": "device_model",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "iPhone 5S",
+            "entity": "model_name"
+          }
+        ],
+        "text": "iPhone 5S"
+      },
+      {
+        "intent": "device_model",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "iPhone 6",
+            "entity": "model_name"
+          }
+        ],
+        "text": "iPhone 6"
+      },
+      {
+        "intent": "device_model",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "iPhone 6s",
+            "entity": "model_name"
+          }
+        ],
+        "text": "iPhone 6s"
+      },
+      {
+        "intent": "device_model",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "iPhone 6S",
+            "entity": "model_name"
+          }
+        ],
+        "text": "iPhone 6S"
+      },
+      {
+        "intent": "device_model",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "iPhone 7",
+            "entity": "model_name"
+          }
+        ],
+        "text": "iPhone 7"
+      },
+      {
+        "intent": "device_model",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "iPhone 7 plus",
+            "entity": "model_name"
+          }
+        ],
+        "text": "iPhone 7 plus"
+      },
+      {
+        "intent": "device_model",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "iPhone 7 Plus",
+            "entity": "model_name"
+          }
+        ],
+        "text": "iPhone 7 Plus"
+      },
+      {
+        "intent": "buy_year",
+        "text": "I bought this a year ago"
+      },
+      {
+        "intent": "buy_year",
+        "text": "I bought it One year ago"
+      },
+      {
+        "intent": "buy_year",
+        "text": "I bought it 1 year ago"
+      },
+      {
+        "intent": "buy_year",
+        "text": "Two years ago"
+      },
+      {
+        "intent": "buy_year",
+        "text": "I bought this two years ago"
+      },
+      {
+        "intent": "buy_year",
+        "text": "I bought it two years ago"
+      },
+      {
+        "intent": "buy_year",
+        "text": "I bought it 2 years ago"
+      },
+      {
+        "intent": "buy_year",
+        "text": "I bought this few months back"
+      },
+      {
+        "intent": "buy_year",
+        "text": "Five years ago"
+      },
+      {
+        "intent": "buy_year",
+        "text": "bought recently"
+      },
+      {
+        "intent": "buy_year",
+        "text": "2016"
+      },
+      {
+        "intent": "buy_year",
+        "text": "2017"
+      },
+      {
+        "intent": "prob_device_screen",
+        "entities": [
+          {
+            "start": 34,
+            "end": 40,
+            "value": "iPhone",
+            "entity": "device_name"
+          }
+        ],
+        "text": "I am unable to see anything on my iPhone"
+      },
+      {
+        "intent": "prob_device_screen",
+        "entities": [
+          {
+            "start": 34,
+            "end": 40,
+            "value": "iPhone",
+            "entity": "device_name"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "value": "screen",
+            "entity": "problem_type"
+          }
+        ],
+        "text": "I am unable to see anything on my iPhone screen"
+      },
+      {
+        "intent": "prob_device_screen",
+        "entities": [
+          {
+            "start": 34,
+            "end": 40,
+            "value": "screen",
+            "entity": "problem_type"
+          }
+        ],
+        "text": "I am unable to see anything on my screen"
+      },
+      {
+        "intent": "prob_device_screen",
+        "entities": [
+          {
+            "start": 36,
+            "end": 42,
+            "value": "iPhone",
+            "entity": "device_name"
+          },
+          {
+            "start": 43,
+            "end": 49,
+            "value": "screen",
+            "entity": "problem_type"
+          }
+        ],
+        "text": "I am not able to see anything on my iPhone screen"
+      },
+      {
+        "intent": "prob_device_screen",
+        "entities": [
+          {
+            "start": 36,
+            "end": 42,
+            "value": "screen",
+            "entity": "problem_type"
+          }
+        ],
+        "text": "I am not able to see anything on my screen"
+      },
+      {
+        "intent": "prob_device_screen",
+        "entities": [
+          {
+            "start": 26,
+            "end": 32,
+            "value": "screen",
+            "entity": "problem_type"
+          }
+        ],
+        "text": "Can't see anything on the screen"
+      },
+      {
+        "intent": "prob_device_screen",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "iPhone",
+            "entity": "device_name"
+          },
+          {
+            "start": 58,
+            "end": 64,
+            "value": "screen",
+            "entity": "problem_type"
+          }
+        ],
+        "text": "My iPhone is switched on but I cannot see anything on the screen"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "Yes"
+      },
+      {
+        "intent": "answer_positive",
+        "text": "yes"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "No"
+      },
+      {
+        "intent": "answer_negative",
+        "text": "no"
+      },
+      {
+        "intent": "answer_screen_positive",
+        "text": "Yes, I can see on the screen."
+      },
+      {
+        "intent": "answer_screen_positive",
+        "text": "Ohh, I can see the display"
+      },
+      {
+        "intent": "answer_screen_positive",
+        "text": "Whoa, I can see my screen"
+      },
+      {
+        "intent": "answer_screen_positive",
+        "text": "Superb, I can see my screen"
+      },
+      {
+        "intent": "answer_screen_negative",
+        "text": "No, I still can't see anything on the screen"
+      },
+      {
+        "intent": "answer_screen_negative",
+        "text": "no, I still can't see anything on the screen"
+      },
+      {
+        "intent": "answer_screen_negative",
+        "text": "No, I can't see anything on the screen"
+      },
+      {
+        "intent": "answer_screen_negative",
+        "text": "no, I can't see anything on the screen"
+      },
+      {
+        "intent": "answer_screen_negative",
+        "text": "Still nothing on the display"
+      },
+      {
+        "intent": "answer_screen_negative",
+        "text": "I afraid but still I can't see"
+      },
+      {
+        "intent": "alt_reply",
+        "text": "Ok, let me do so"
+      },
+      {
+        "intent": "alt_reply",
+        "text": "ok, let me do so"
+      },
+      {
+        "intent": "alt_reply",
+        "text": "Sure, let me do so"
+      },
+      {
+        "intent": "alt_reply",
+        "text": "just kept on charge"
+      },
+      {
+        "intent": "alt_reply",
+        "text": "just did it"
+      },
+      {
+        "intent": "alt_reply",
+        "text": "doing so"
+      },
+      {
+        "intent": "alt_reply",
+        "text": "Thanks"
+      },
+      {
+        "intent": "alt_reply",
+        "text": "Thanks for creating the ticket"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "I am good for now, Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "I am good for now. Thanks for your help"
+      },
+      {
+        "intent": "bye",
+        "text": "I am good for now. Thanks for all your help"
+      },
+      {
+        "intent": "bye",
+        "text": "Thanks for your help. Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Thanks for your help. I will touch base with the service desk"
+      },
+      {
+        "intent": "bye",
+        "text": "Thanks for your help. Let me connect with service desk"
+      },
+      {
+        "intent": "bye",
+        "text": "Thanks for all your help"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
