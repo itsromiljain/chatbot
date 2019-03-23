@@ -1,33 +1,52 @@
-## intent:greet
-- hey
-- hello
-- hi
-- good morning
-- good evening
-- good afternoon
-- hey there
-- hi there
-- hii
+## intent:alt_reply
+- Ok, let me do so
+- ok, let me do so
+- Sure, let me do so
+- just kept on charge
+- just did it
+- doing so
+- Thanks
+- Thanks for creating the ticket
 
-## intent:fine_normal
-- I am doing great
-- I'm doing great
-- I'm fine
-- I'm good
-- Doing good
-- Awesome
-- im fine
-- im good
+## intent:answer_negative
+- No
+- no
 
-## intent:fine_ask
-- I am good, how are you doing?
-- I'm fine, how are you?
-- I'm good, how are you?
-- I am good, how are you?
-- Doing good, how are you?
-- Awesome, how are you?
-- im fine, how are you?
-- im good, how are you?
+## intent:answer_positive
+- Yes
+- yes
+
+## intent:answer_screen_negative
+- No, I still can't see anything on the screen
+- no, I still can't see anything on the screen
+- No, I can't see anything on the screen
+- no, I can't see anything on the screen
+- Still nothing on the display
+- I afraid but still I can't see
+
+## intent:answer_screen_positive
+- Yes, I can see on the screen.
+- Ohh, I can see the display
+- Whoa, I can see my screen
+- Superb, I can see my screen
+
+## intent:buy_year
+- I bought this a year ago
+- I bought it One year ago
+- I bought it 1 year ago
+- Two years ago
+- I bought this two years ago
+- I bought it two years ago
+- I bought it 2 years ago
+- I bought this few months back
+- Five years ago
+- bought recently
+- 2016
+- 2017
+
+## intent:bye
+- Bye
+- Bbye
 
 ## intent:device_issue
 - I have a [problem](notify_problem) with my [iPhone](device_name)
@@ -50,19 +69,38 @@
 - [iPhone 7 plus](model_name)
 - [iPhone 7 Plus](model_name)
 
-## intent:buy_year
-- I bought this a year ago
-- I bought it One year ago
-- I bought it 1 year ago
-- Two years ago
-- I bought this two years ago
-- I bought it two years ago
-- I bought it 2 years ago
-- I bought this few months back
-- Five years ago
-- bought recently
-- 2016
-- 2017
+## intent:fine_ask
+- I am good, how are you doing?
+- I'm fine, how are you?
+- I'm good, how are you?
+- I am good, how are you?
+- Doing good, how are you?
+- Awesome, how are you?
+- im fine, how are you?
+- im good, how are you?
+- I am doing good. How about you?
+
+## intent:fine_normal
+- I am doing great
+- I'm doing great
+- I'm fine
+- I'm good
+- Doing good
+- Awesome
+- im fine
+- im good
+
+## intent:greet
+- hey
+- hello
+- hi
+- good morning
+- good evening
+- good afternoon
+- hey there
+- hi there
+- hii
+- Hi
 
 ## intent:prob_device_screen
 - I am unable to see anything on my [iPhone](device_name)
@@ -73,43 +111,7 @@
 - Can't see anything on the [screen](problem_type)
 - My [iPhone](device_name) is switched on but I cannot see anything on the [screen](problem_type)
 
-## intent:answer_positive
-- Yes
-- yes
-
-## intent:answer_negative
-- No
-- no
-
-## intent:answer_screen_positive
-- Yes, I can see on the screen.
-- Ohh, I can see the display
-- Whoa, I can see my screen
-- Superb, I can see my screen
-
-## intent:answer_screen_negative
-- No, I still can't see anything on the screen
-- no, I still can't see anything on the screen
-- No, I can't see anything on the screen
-- no, I can't see anything on the screen
-- Still nothing on the display
-- I afraid but still I can't see 
-
-## intent:alt_reply
-- Ok, let me do so
-- ok, let me do so
-- Sure, let me do so
-- just kept on charge
-- just did it
-- doing so
-
-# intent:greet_ticket
-- Thanks
-- Thanks for creating the ticket
-
-## intent:bye
-- Bye
-- I am good for now, Bye
+## intent:thanks
 - I am good for now. Thanks for your help
 - I am good for now. Thanks for all your help
 - Thanks for your help. Bye

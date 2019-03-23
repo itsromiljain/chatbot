@@ -14,6 +14,7 @@
     "intent_greet",
     "intent_greet_ticket",
     "intent_prob_device_screen",
+    "intent_thanks",
     "entity_device_name",
     "entity_notify_problem",
     "entity_model_name",
@@ -48,6 +49,7 @@
     "prev_utter_issue_resolution",
     "prev_utter_glad",
     "prev_utter_anything_else",
+    "prev_utter_thanks",
     "prev_utter_bye"
   ]
 }

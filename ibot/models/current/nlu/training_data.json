@@ -597,30 +597,30 @@
       },
       {
         "intent": "bye",
-        "text": "I am good for now, Bye"
+        "text": "Bbye"
       },
       {
-        "intent": "bye",
+        "intent": "thanks",
         "text": "I am good for now. Thanks for your help"
       },
       {
-        "intent": "bye",
+        "intent": "thanks",
         "text": "I am good for now. Thanks for all your help"
       },
       {
-        "intent": "bye",
+        "intent": "thanks",
         "text": "Thanks for your help. Bye"
       },
       {
-        "intent": "bye",
+        "intent": "thanks",
         "text": "Thanks for your help. I will touch base with the service desk"
       },
       {
-        "intent": "bye",
+        "intent": "thanks",
         "text": "Thanks for your help. Let me connect with service desk"
       },
       {
-        "intent": "bye",
+        "intent": "thanks",
         "text": "Thanks for all your help"
       }
     ],

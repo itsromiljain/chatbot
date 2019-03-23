@@ -63,10 +63,18 @@
 * greet_ticket
 - utter_anything_else 
 
+## thanks path 1
+* thanks
+- utter_thanks
+
 ## bye path 1
 * bye
 - utter_bye
 
 
-
+## Generated Story 955907671328642568
+* greet
+    - utter_greet
+* fine_ask
+    - utter_reply
 

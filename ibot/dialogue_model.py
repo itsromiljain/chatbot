@@ -25,7 +25,7 @@ def run_core(core_model_path, nlu_model_path, action_endpoint_url, slack_token):
     action_endpoint = EndpointConfig(url=action_endpoint_url)
     agent = Agent.load(core_model_path, interpreter=nlu_interpreter, action_endpoint=action_endpoint)
     input_channel = SlackInput(slack_token)
-    # agent.handle_channels([input_channel], 5004, serve_forever=True)
+    agent.handle_channels([input_channel], 5004, serve_forever=True)
 
     print("Your bot is ready to talk! Type your messages here or send 'stop'")
     while True:

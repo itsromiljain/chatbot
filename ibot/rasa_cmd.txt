@@ -1,16 +1,30 @@
-##Initial commands to install Rasa NLU
-pip3 install rasa_nlu
+## pip3 and pip would make a difference only when you are not using any environment managers like virualenv (or) conda.
+## Now as we have created a conda environment which has python==3.6, pip would be equivalent to pip3
+
+## Install miniconda/anaconda
+https://docs.conda.io/en/latest/miniconda.html
+## Check conda version
+conda --version
+## Conda Update
+conda update conda
+## Create Virtual Env
+conda create -n botenv python=3.6
+## Activate Virtual Env
+conda activate botenv
+
+##Initial commands to install Rasa NLU to Virtual Env i.e. botenv
+pip install rasa_nlu
 ## To Update existing one
-pip3 install -U rasa_nlu
+pip install -U rasa_nlu
 
 ## For dependecnies
 ##spaCy+sklearn
-pip3 install rasa_nlu[spacy]
+pip install rasa_nlu[spacy]
 python3 -m spacy download en_core_web_md
 python3 -m spacy link en_core_web_md en
 
 ##Tensorflow
-pip3 install rasa_nlu[tensorflow]
+pip install rasa_nlu[tensorflow]
 
 ## Train Rasa NLU
 python3 -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose
@@ -19,18 +33,20 @@ python3 -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed
 python3 -m rasa_nlu.server --path ./models
 
 ##Initial commands to install Rasa Core & SDK
-pip3 install rasa_core
+pip install rasa_core
 ## To Update existing one
-pip3 install -U rasa_core
+pip install -U rasa_core
 
-pip3 install rasa_core_sdk
+pip install rasa_core_sdk
 
 ##Train Rasa Core
 python3 -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -c policy.yml
 
+python -m rasa_core.train interactive -o models/dialogue -d domain.yml -c policy.yml -s data/stories.md --nlu models/current/nlu --endpoints endpoints.yml
+
 ## Run Rasa Core
 python3 -m rasa_core.run -d models/dialogue -u models/current/nlu
-python -m rasa_core.run -d models/dialogue -u models/nlu/current --port 5002 --credentials credentials.yml
+python3 -m rasa_core.run -d models/dialogue -u models/current/nlu --port 5002 --credentials credentials.yml
 
 # Debug Rasa Core
 python3 -m rasa_core.run -d models/dialogue -u models/current/nlu --debug
@@ -50,6 +66,8 @@ python3 -m rasa_core_sdk.endpoint --actions actions
 ## NLU runs on port 5000
 ## Core runs on port 5005
 ## Action runs on port 5055
+
+http://397ac52b.ngrok.io/webhooks/slack/webhook
 
 
 
