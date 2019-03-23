@@ -1,2 +1,2 @@
-# ChatBot developed using Rasa Stack Framework 
+# ChatBots developed using Rasa Framework 
 
