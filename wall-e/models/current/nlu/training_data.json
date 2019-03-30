@@ -1,0 +1,330 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hi there"
+      },
+      {
+        "intent": "greet",
+        "text": "hii"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I am good, how are you doing?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I'm fine, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I'm good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I am good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "Doing good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "Awesome, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "im fine, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "im good, how are you?"
+      },
+      {
+        "intent": "fine_ask",
+        "text": "I am doing good. How about you?"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I am doing great"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm doing great"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "I'm good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "Doing good"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "Awesome"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "im fine"
+      },
+      {
+        "intent": "fine_normal",
+        "text": "im good"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 46,
+            "end": 51,
+            "value": "world",
+            "entity": "category"
+          }
+        ],
+        "text": "Can you please tell me latest news around the world?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "world",
+            "entity": "category"
+          }
+        ],
+        "text": "What is going on around the World?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "world",
+            "entity": "category"
+          }
+        ],
+        "text": "What is going on around the glob?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 38,
+            "end": 44,
+            "value": "sports",
+            "entity": "category"
+          }
+        ],
+        "text": "Can you please tell me latest news in sports?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "sports",
+            "entity": "category"
+          }
+        ],
+        "text": "What is going on in Sports"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 20,
+            "end": 30,
+            "value": "technology",
+            "entity": "category"
+          }
+        ],
+        "text": "What is going on in technology?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 19,
+            "end": 29,
+            "value": "technology",
+            "entity": "category"
+          }
+        ],
+        "text": "What is cooking in tech space"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 21,
+            "end": 31,
+            "value": "technology",
+            "entity": "category"
+          }
+        ],
+        "text": "Tell me some news in Technology?"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "technology",
+            "entity": "category"
+          }
+        ],
+        "text": "What is cooking in Tech"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "buinsess",
+            "entity": "category"
+          }
+        ],
+        "text": "Need some news on buinsess"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "buinsess",
+            "entity": "category"
+          }
+        ],
+        "text": "Need some news on Buinsess"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "arts",
+            "entity": "category"
+          }
+        ],
+        "text": "arts"
+      },
+      {
+        "intent": "news",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "arts",
+            "entity": "category"
+          }
+        ],
+        "text": "art"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thanks"
+      },
+      {
+        "intent": "thanks",
+        "text": "Thank you so much"
+      },
+      {
+        "intent": "bye",
+        "text": "No, I am good as of now. Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Bye"
+      },
+      {
+        "intent": "bye",
+        "text": "Bbye"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": [
+      {
+        "value": "world",
+        "synonyms": [
+          "World",
+          "glob",
+          "Glob"
+        ]
+      },
+      {
+        "value": "sports",
+        "synonyms": [
+          "Sports"
+        ]
+      },
+      {
+        "value": "technology",
+        "synonyms": [
+          "tech space",
+          "Technology",
+          "Tech",
+          "Tech Space",
+          "tech"
+        ]
+      },
+      {
+        "value": "buinsess",
+        "synonyms": [
+          "Buinsess"
+        ]
+      },
+      {
+        "value": "arts",
+        "synonyms": [
+          "art"
+        ]
+      }
+    ]
+  }
+}
