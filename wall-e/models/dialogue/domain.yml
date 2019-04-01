@@ -1,0 +1,56 @@
+%YAML 1.1
+---
+actions:
+- action_restart
+- action_get_news
+- utter_greet
+- utter_reply
+- utter_help
+- utter_anything_else
+- utter_ofc
+- utter_bye
+- utter_default
+config:
+  store_entities_as_slots: true
+entities:
+- category
+forms: []
+intents:
+- greet:
+    use_entities: true
+- fine_ask:
+    use_entities: true
+- fine_normal:
+    use_entities: true
+- news:
+    use_entities: true
+- thanks:
+    use_entities: true
+- bye:
+    use_entities: true
+slots:
+  category:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_anything_else:
+  - text: No worries. Is there anything else I can help you with?
+  - text: No worries. Let me know if there is anything else I can help you with
+  utter_bye:
+  - text: Bye and have a nice day
+  - text: Bbye and have a nice day
+  utter_default:
+  - text: I am not sure what you're aiming for
+  utter_greet:
+  - text: Hey, how are you?
+  - text: Hello, How are you doing?
+  utter_help:
+  - text: Great. How can I help you?
+  - text: Great. Tell me How can I help you?
+  utter_ofc:
+  - text: I can definitely help you
+  - text: Surely, I can help you
+  utter_reply:
+  - text: I'm doing great. Please let me know what I can do for you.
+  - text: I'm doing great. Tell me How can I help you today?

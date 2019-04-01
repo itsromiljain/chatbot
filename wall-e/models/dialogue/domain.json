@@ -1,0 +1,27 @@
+{
+  "states": [
+    "intent_bye",
+    "intent_fine_ask",
+    "intent_fine_normal",
+    "intent_greet",
+    "intent_news",
+    "intent_thanks",
+    "entity_category",
+    "slot_category_0",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_action_default_fallback",
+    "prev_action_deactivate_form",
+    "prev_action_revert_fallback_events",
+    "prev_action_default_ask_affirmation",
+    "prev_action_default_ask_rephrase",
+    "prev_action_get_news",
+    "prev_utter_greet",
+    "prev_utter_reply",
+    "prev_utter_help",
+    "prev_utter_anything_else",
+    "prev_utter_ofc",
+    "prev_utter_bye",
+    "prev_utter_default"
+  ]
+}
