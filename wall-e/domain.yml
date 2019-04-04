@@ -34,14 +34,17 @@ templates:
   utter_help:
     - text: Great. How can I help you?
     - text: Great. Tell me How can I help you?
+    - text: Great. Tell me what all news you would like to get.
   utter_anything_else:
     - text: No worries. Is there anything else I can help you with?
     - text: No worries. Let me know if there is anything else I can help you with
   utter_ofc:
-    - text: I can definitely help you
-    - text: Surely, I can help you
+    - text: I can definitely help you. The top 5 news of the {category}
+    - text: Surely, I can help you. The top 5 news of the {category}
   utter_bye:
     - text: Bye and have a nice day
     - text: Bbye and have a nice day
   utter_default:
     - text: I am not sure what you're aiming for
+    - text: I am sorry but I am not able to get you.
+    - text: My appologies but I am not able to get you

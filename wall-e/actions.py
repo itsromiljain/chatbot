@@ -15,6 +15,9 @@ class ActionGetNewst(Action):
         params = {'api-key': "YwFANMbVPDGGaM7aNgXuPdlkt2DuEK6I", 'limit': 5}
         response = requests.get(url, params).text
         json_data = json.loads(response)['results']
+        i = 0
         for results in json_data:
-            dispatcher.utter_message(results['abstract'])
+            i = i+1
+            message = str(i) + "." + results['abstract']
+            dispatcher.utter_message(message)
         return[]

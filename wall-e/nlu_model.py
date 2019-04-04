@@ -22,13 +22,9 @@ def train_nlu(data_path, configs, model_path):
 def run_nlu(nlu_path):
     logging.basicConfig(filename=logfile, level=logging.DEBUG)
     interpreter = Interpreter.load(nlu_path)
-    pprint.pprint(interpreter.parse("Can you please tell me some news around the world?"))
-    pprint.pprint(interpreter.parse("What is going on around the glob?"))
-    pprint.pprint(interpreter.parse("Tell me some news in tech?"))
-    pprint.pprint(interpreter.parse("Tell me some news in tech space?"))
-    pprint.pprint(interpreter.parse("Tell me some news in Tech Space?"))
-    pprint.pprint(interpreter.parse("Please tell me What is going on around the Glob?"))
-    pprint.pprint(interpreter.parse("What is cooking in technology?"))
+    pprint.pprint(interpreter.parse("Share some latest news around the world?"))
+    pprint.pprint(interpreter.parse("What is going on in technology?"))
+    pprint.pprint(interpreter.parse("What is going on in education?"))
 
 
 if __name__ == '__main__':

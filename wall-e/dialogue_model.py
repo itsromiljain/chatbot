@@ -5,8 +5,6 @@ from rasa_core.channels.slack import SlackInput
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RasaNLUInterpreter
 from rasa_core.utils import EndpointConfig
-from rasa_core.train import interactive
-from rasa_core_sdk import endpoint
 
 
 logfile = 'dialogue_model.log'
@@ -26,8 +24,8 @@ def run_core(core_model_path, nlu_model_path, action_endpoint_url, slack_token):
     nlu_interpreter = RasaNLUInterpreter(nlu_model_path)
     action_endpoint = EndpointConfig(url=action_endpoint_url)
     agent = Agent.load(core_model_path, interpreter=nlu_interpreter, action_endpoint=action_endpoint)
-    # input_channel = SlackInput(slack_token)
-    # agent.handle_channels([input_channel], 5004, serve_forever=True)
+    input_channel = SlackInput(slack_token)
+    agent.handle_channels([input_channel], 5004, serve_forever=True)
 
     print("Your bot is ready to talk! Type your messages here or send 'stop'")
     while True:
