@@ -2,34 +2,19 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "device_name",
         "problem_type",
         "model_name",
+        "device_name",
         "notify_problem"
       ]
     },
-    "utter_issue_fall": {
-      "slots": []
-    },
-    "action_create_ticket": {
-      "slots": []
-    },
-    "utter_anything_else": {
+    "utter_help": {
       "slots": []
     },
     "utter_issue_stamp": {
       "slots": []
     },
-    "utter_thanks": {
-      "slots": []
-    },
-    "utter_help": {
-      "slots": []
-    },
-    "utter_device_model": {
-      "slots": []
-    },
-    "utter_greet": {
+    "utter_anything_else": {
       "slots": []
     },
     "utter_reply": {
@@ -38,13 +23,28 @@
     "utter_default": {
       "slots": []
     },
+    "utter_issue_fall": {
+      "slots": []
+    },
+    "utter_thanks": {
+      "slots": []
+    },
+    "action_create_ticket": {
+      "slots": []
+    },
     "utter_issue_damage": {
       "slots": []
     },
-    "utter_bye": {
+    "utter_device_model": {
       "slots": []
     },
     "utter_restart_outcome": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    },
+    "utter_bye": {
       "slots": []
     }
   },
@@ -62,7 +62,7 @@
     "rasa_core.policies.fallback.FallbackPolicy",
     "rasa_core.policies.form_policy.FormPolicy"
   ],
-  "trained_at": "20190322-222112",
+  "trained_at": "20190325-164932",
   "rasa_core": "0.13.4",
   "tensorflow": "1.12.0",
   "sklearn": "0.20.3"

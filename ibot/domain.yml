@@ -53,6 +53,7 @@ slots:
     type: text
   problem_type:
     type: text
+
 templates:
   utter_anything_else:
   - text: Is there anything else I can help you with?

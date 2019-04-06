@@ -2,41 +2,41 @@
 ---
 actions:
 - action_restart
-- action_create_ticket
-- utter_default
-- utter_greet
-- utter_help
-- utter_reply
-- utter_ofc
-- utter_device_model
-- utter_year
-- utter_issue_damage
-- utter_issue_fall
-- utter_damage_screen
-- utter_process_ticket
-- utter_issue_stamp
 - utter_device_charged
-- utter_restart
+- utter_greet
+- utter_process_ticket
+- utter_reply
+- utter_issue_stamp
+- utter_glad
+- utter_bye
+- utter_issue_damage
+- utter_damage_screen
+- utter_help
+- utter_year
 - utter_restart_outcome
 - utter_issue_resolution
-- utter_glad
+- utter_device_model
+- utter_ofc
+- action_create_ticket
+- utter_default
+- utter_restart
 - utter_anything_else
 - utter_thanks
-- utter_bye
+- utter_issue_fall
 config:
   store_entities_as_slots: true
 entities:
 - device_name
+- problem_type
 - notify_problem
 - model_name
-- problem_type
 forms: []
 intents:
 - greet:
     use_entities: true
-- fine_normal:
-    use_entities: true
 - fine_ask:
+    use_entities: true
+- fine_normal:
     use_entities: true
 - device_issue:
     use_entities: true
